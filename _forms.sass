@@ -1,0 +1,61 @@
+.container
+	&__forms
+		display: flex
+		justify-content: space-between
+		align-items: center
+			
+
+
+.vacation_form, .sick_form, .offer_form, .month_form
+	&__title
+		font-size: 30px
+		line-height: 18px
+		font-weight: 500
+		color: #333333
+	&__cell_item
+		width: 70px
+		height: 50px
+		border: 1px solid #7658e0
+		border-radius: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 10px
+		text-align: center
+		font-size: 25px
+		&:first-child
+			border: none
+			font-size: 25px
+			margin: 10px
+			width: 20%
+			justify-content: space-between
+
+	input
+		border: none
+		width: 90%
+		font-size: 25px
+		outline: none
+		text-align: center
+		&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			margin: 0
+
+.month_form
+	&__cell_item
+		border: none
+		font-size: 19px
+		line-height: 18px
+		font-weight: 300
+
+
+.sick_form, .offer_form, .month_form, .vacation_form
+	&__cell_item
+		&:last-child
+			border: none
+.vacation_form
+	&__cell_item
+		p
+			margin: 0 auto
+			font-size: 20px
