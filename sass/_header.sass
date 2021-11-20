@@ -37,22 +37,26 @@
     position: absolute
     width: 388px
     bottom: 30px
-    font-weight: 400
-    line-height: 25px
-    font-size: 18px
+    z-index: 2
+    &_text
+      margin: 0
+      padding: 0
+      font-weight: 400
+      line-height: 25px
+      font-size: 18px
     &_link
       color: $color-blue
       text-decoration: none
+      &:hover
+        color: $color-dark-grey
 .logo
   max-height: 32px
   position: absolute
   top: 30px
-  &___place_header
+  &_place_header
     width: 183px
-    z-index: 3
-
-.table__cell_theme_dark
-  width: 200px
-  color: white
-  margin-right: 0
-  margin-top: 80px
+    z-index: 2
+    height: 32px
+  &_place_footer
+    position: static
+    height: 35px
