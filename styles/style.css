@@ -73,18 +73,24 @@
 
 .logo {
   width: 183px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
 }
 
 .logo_place_header {
   height: 32px;
-  z-index: 2;
   position: absolute;
   top: 30px;
   left: 64px;
+  background-image: url("../images/logo_place_header.svg");
 }
 
 .logo_place_footer {
   height: 35px;
+  background-image: url("../images/logo_place_footer.svg");
+  width: 100%;
 }
 
 /* description block */
@@ -303,6 +309,8 @@
 }
 
 .footer__column {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -336,14 +344,29 @@
   line-height: 30px;
 }
 
-.footer__column-link,.footer__column-links {
+.footer__column-links {
   padding: 0;
   margin: 0;
   text-decoration: none;
   color: #fff;
+  line-height: 30px;
 }
 
-.footer__content_social_pic {
+/* иконки */
+
+.footer__column-link_facebook::before {
+  content: url("../images/facebook_color_white.svg");
+}
+
+.footer__column-link_vk::before {
+  content: url("../images/vk_color_white.svg");
+}
+
+.footer__column-link_insta::before {
+  content: url("../images/instagram_color_white.svg");
+}
+
+.footer__column-link_pic::before {
   margin-right: 10px;
   height: 16px;
   width: 16px;
