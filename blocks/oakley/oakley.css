@@ -1,0 +1,8 @@
+.oakley {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 153px 0 0 0;
+  /* iframes дали высоту 263px, вычитаем её из высоты видео, получается то, сколько нужно добавить к падингу */
+}
