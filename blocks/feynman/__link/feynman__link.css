@@ -11,7 +11,6 @@
 }
 
 .feynman__link:hover {
-  color: #1f1f1f;
   opacity: 0.6;
   transition: .3s ease;
 }

@@ -1,7 +1,5 @@
 .video__iframes {
   display: flex;
-  margin: 50px auto 0;
-  height: 263px;
-  /* мне кажется видео заезжает примерно на 1/6 */
+  margin: 50px auto -60px;
   overflow: visible;
 }
